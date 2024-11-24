@@ -51,5 +51,10 @@
         {{ prediction }}
     </div>
     {% endif %}
+    {% if input_text %}
+      <form method="GET" action="/models">
+        <button type="submit" class="predict-button">Predict Other Models</button>
+      </form>
+    {% endif %}
 </div>
 {% endblock %}
