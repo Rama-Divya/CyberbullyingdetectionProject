@@ -11,7 +11,7 @@ app.secret_key = 'your_secret_key'
 
 # Load the tokenizer and LSTM model
 tokenizer = pickle.load(open("tokenizer1.pkl", "rb"))
-lstm_model = load_model("lstm_model.h5")
+lstm_model = load_model("lstm_model1.h5")
 vectorizer = joblib.load('vectorizer.pkl')
 rf_model = joblib.load('random_forest_model.pkl')
 logistic_model = joblib.load('logistic_regression_model.pkl')
