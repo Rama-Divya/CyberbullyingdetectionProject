@@ -82,6 +82,8 @@ def models():
 @app.route('/dataset')
 def dataset():
     return render_template('dataset.html')
+if __name__=='__main__':
+    app.run(debug=True)
 
 
 
